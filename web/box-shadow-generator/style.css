@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0.5rem 1rem;
+    text-align: center;
+}
+
+.shadowShowcase {
+    margin: 3rem auto;
+    background-color: lightseagreen;
+    width: 100px;
+    height: 100px;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input {
+    margin-bottom: 1.5rem;
+}
+
+.operationArea {
+    width: 30rem;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.codeGenerator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    text-align: center;
+    width: 18rem;
+    padding: 0.8rem 0 0;
+}
+
+button#copyCode {
+    padding: 0.8rem;
+    width: 4rem;
+}

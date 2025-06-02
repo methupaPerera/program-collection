@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body, html{
+    margin: auto;
+    background-image: url("Images/background.jpg");
+}
+
+.transition {
+    animation: transition 1.5s;
+}
+
+@keyframes transition {
+    From {
+        opacity: 0;
+    }
+    To {
+        opacity: 1;
+    }
+}
+
+.container {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px black;
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+}
+
+.topic {
+    font-size: 55px;
+    font-family: 'Reggae One', cursive;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(139, 68, 1);
+}
+
+.img {
+    border-radius: 20%;
+    height: 280px;
+    width: 220px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.my-image {
+    text-align: center;
+    margin: auto;
+}
+
+.header {
+    margin-top: 20px;
+    background-color: rgb(163, 100, 4);
+    opacity: 0.7;
+    color: aliceblue;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 60px;
+    border-radius: 20px;
+    font-family: 'Macondo', cursive;
+    font-weight: bold;
+}
+
+.table {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    font-size: 20px;
+    color: rgb(97, 36, 0);
+}
+
+th {
+    border-right: 2px solid black;
+    padding-right: 20px;
+}
+
+td {
+    padding-left: 20px;
+}
+
+.about-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.social-media-links {
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+a, .end {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.end {
+    margin: 0;
+    font-size: 13px;
+}

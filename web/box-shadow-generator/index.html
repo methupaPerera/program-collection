@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box Shadow Generator App.</h1>
+
+    <!-- Shadow Monitor -->
+    <div class="shadowShowcase"></div>
+
+    <!-- You can change anything in shadow here -->
+    <div class="operationArea">
+        <div>
+            <label for="rightVal">Horizontal Shadow</label>
+            <input type="range" max="100" min="-100" value="0" id="rightVal">
+        </div>
+        
+        <div>
+            <label for="downVal">Vertical Shadow</label>
+            <input type="range" max="100" min="-100" value="0" id="downVal">
+        </div>
+
+        <div>
+            <label for="blurVal">Blur Radius</label>
+            <input type="range" max="100" min="0" value="0" id="blurVal">
+        </div>
+
+        <div>
+            <label for="spreadVal">Spread Radius</label>
+            <input type="range" max="100" min="-100" value="0" id="spreadVal">
+        </div>
+
+        <div>
+            <label for="opacityVal">Shadow Color Opacity</label>
+            <input type="range" max="256" min="0" value="255" id="opacitydVal">
+        </div>
+
+        <div>
+            <label for="colorVal">Shadow Color</label>
+            <input type="color" id="colorVal">
+        </div>
+
+        <div>
+            <label for="insetVal">Inset Shadow : </label>
+            <input type="checkbox" id="insetVal">
+        </div>
+    </div>
+
+    <!-- You can copy the code in here -->
+    <div class="codeGenerator">
+        <textarea name="" id="generatedCode"></textarea>
+        <button id="copyCode">Copy</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

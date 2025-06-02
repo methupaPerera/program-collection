@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Items Manager App.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Grocery Items Manager.</h1>
+
+    <div id="inputDataSection">
+        <div class="mainBudget">
+            <label for="budget">Insert your budget - </label>
+            <input type="text" id="budget">
+            <button id="insert">Insert Budget</button>
+        </div>
+
+        <div class="itemsInput">
+            <div>
+                <label for="name">Name of the product - </label>
+                <input type="text" id="name">
+            </div>
+
+            <div>
+                <label for="price">Price - </label>
+                <input type="text" id="price">
+            </div>
+
+            <div>
+                <label for="qty">Quantity - </label>
+                <input type="text" id="qty">
+            </div>
+            <button id="insertData">Insert Deatils</button>
+        </div>
+    </div>
+
+    <div class="displayDataSection">
+        <p>Your budget - <span id="setBudget"></span></p>
+        <p>Remaining budget - <span id="remBudget"></span></p>
+    </div>
+
+    <div class="itemsSection">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

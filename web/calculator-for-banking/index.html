@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="images/favicon.png">
+    
+    <title>Calculator for Banking - Calculator Tool</title>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark border-bottom border-3 border-warning fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-calculator-fill display-5"></i><span class="display-5 fw-bold">Banking</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto lead text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#" onclick="displayAbout()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a title="Calculators" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item rounded" href="#ioi">Interest on Interest</a></li>
+                            <li><a class="dropdown-item rounded" href="#db">Declining Balance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--About-->
+    <div class=" tab-pane about container text-center p-3" id="about" style="display: none;">
+        <img class="img-fluid mb-3" src="images/profile.png" width="350" height="350" alt="profile image">
+        <table class="table table-borderless ms-auto">
+            <tr>
+                <th class="display-6 fw-bold">Name of the creator</th>
+                <td class="display-6 fw-bold">Methupa Bihandu</td>
+            </tr>
+            <tr>
+                <th class="display-6 fw-bold">Age</th>
+                <td class="display-6 fw-bold">16</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="content" style="display: block;">
+        <!--Showcase-->
+        <section class="text-center text-lg-start">
+            <div class="container header">
+                <div class="d-lg-flex align-items-center justify-content-between">
+                    <div>
+                        <h1 class="fw-bold">Financial <span class="text-primary">Discipline</span></h1>
+                        <p class="lead">
+                            Financial discipline is the act of setting specific monetary (spending and saving) 
+                            goals and measuring oneself against how well they are achieved.
+                        </p>
+                        <p class="lead">  
+                            Once that financial discipline is established, 
+                            a person can take further steps to becoming financially independent.
+                        </p>
+                    </div>
+                    <img class="img-fluid d-none d-lg-block" src="images/header-img.svg" alt="showcase image">
+                    <img class="img-fluid d-block d-lg-none" src="images/header-img-lg.svg" alt="showcase image">
+                </div>
+            </div>
+        </section>
+
+        <!--Services-->
+        <section class="bg-dark m-3 p-3 rounded">
+            <div class="container">
+                <h1 class="text-light mb-4">Our other Services</h1>
+                <div class="row g-3">
+                    <div class="col-md reveal">
+                        <div class="card bg-warning text-light">
+                            <div class="card-body">
+                                <h2 class="card-titl">Free Learning</h1>
+                                <div class="text-center">
+                                    <i class="bi bi-person-workspace h2"></i>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Sed quos asperiores omnis! Accusantium, quod necessitatibus!</p>
+                                    <a href="#" class="btn btn-primary btn-lg px-5">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md reveal">
+                        <div class="card bg-warning text-light">
+                            <div class="card-body">
+                                <h2>Free Hosting</h1>
+                                <div class="text-center">
+                                    <i class="bi bi-router-fill h2"></i></i>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Sed quos asperiores omnis! Accusantium, quod necessitatibus!</p>
+                                    <a href="#" class="btn btn-primary btn-lg px-5">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md reveal">
+                        <div class="card bg-warning text-light">
+                            <div class="card-body">
+                                <h2>Video Downloader</h1>
+                                <div class="text-center">
+                                    <i class="bi bi-cloud-download-fill h2"></i></i>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                    Sed quos asperiores omnis! Accusantium, quod necessitatibus!</p>
+                                    <a href="#" class="btn btn-primary btn-lg px-5">Visit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Interest on Interest-->
+        <section class="container border border-3 rounded p-4 mb-5" id="ioi">
+            <h1 class="text-center reveal">Interest on Interest</h2>
+            <table class="table h5 table-borderless reveal">
+                <tr>
+                    <th class="text-end"><label>Amount of the loan - </label></th>
+                    <td><input class="input" type="text" value="" id="loan-i"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><label>Period of the loan (years) - </label></th>
+                    <td><input class="input" type="text" value="" id="time-i"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><label>Interest rate - </label></th>
+                    <td><input class="input" type="text" value="" id="rate-i"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><input type="button" class="btn btn-primary" value="Calculate" onclick="ioi()"></th>
+                    <th class="text-start"><input type="button" class="btn btn-dark" value="Reset" onclick="reset()"></th>
+                </tr>
+            </table>
+            <p id="ioiOut" class="h4 text-center">You have to pay Rs <span id="result-i" class="text-success">...</span></p>
+        </section>
+
+        <!--Declining Balance-->
+        <section class="container border border-3 rounded p-4 mb-5" id="db">
+            <h1 class="text-center reveal">Declining Balance</h2>
+            <table class="table h5 table-borderless reveal">
+                <tr>
+                    <th class="text-end"><label>Amount of the loan - </label></th>
+                    <td><input class="input" type="text" value="" id="loan"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><label>Period of the loan (months) - </label></th>
+                    <td><input class="input" type="text" value="" id="time"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><label>Interest rate - </label></th>
+                    <td><input class="input" type="text" value="" id="rate"></td>
+                </tr>
+                <tr>
+                    <th class="text-end"><input type="button" class="btn btn-primary" value="Calculate" onclick="db()"></th>
+                    <th class="text-start"><input type="button" class="btn btn-dark" value="Reset" onclick="reset()"></th>
+                </tr>
+            </table>
+            <p class="h4 text-center">You have to pay Rs <span id="result" class="text-success">...</span> for each month.</p>
+        </section>
+
+        <!--Footer-->
+        <footer class="bg-warning p-5 rounded-top text-center reveal" id="contact">
+            <div class="container">
+                <p class="h6"><i class="bi bi-envelope text-dark"></i>&nbsp;<a href="https://methupabihanduperera@gmail.com" class="text-decoration-none text-dark">methupabihanduperera@gmail.com</a></p>
+                <p class="h6"><i class="bi bi-telephone text-dark"></i>&nbsp;<i class="bi bi-whatsapp"></i>&nbsp;+94 75 526 0309</p>
+                <p class="h6"><i class="bi bi-facebook text-dark"></i>&nbsp;<a href="https://www.facebook.com/profile.php?id=100076578583392" class="text-decoration-none text-dark">Facebook</a></p>
+                <p class="h6"><i class="bi bi-instagram text-dark"></i>&nbsp;<a href="https://instagram.com/_methupa" class="text-decoration-none text-dark">Instagram</a></p>
+            </div>
+        </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

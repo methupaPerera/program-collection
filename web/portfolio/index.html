@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methupa Perera - Doing something great...as always</title>
+
+    <link rel="icon" href="images/blue-theme/favicon.png" class="favicon">
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Material Icons CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- JavaScript Files -->
+    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Main landing page area -->
+    <header id="home">
+            <!-- Navigation Bar -->
+            <nav>
+                <div class="container">
+                    <a href="index.html"><img src="images/blue-theme/logo.png" class="logo" alt="the logo"></a>
+
+                    <ul class="nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#cv" class="btn-sm btn-primary">Download CV</a></li>
+                    </ul>
+
+                    <!-- Navigation Icons -->
+                    <i class="bi bi-list" id="open-nav"></i>
+                    <i class="bi bi-x" id="close-nav"></i>
+                </div>
+            </nav>
+
+            <!-- Showcase area of the landing page -->
+            <section id="showcase">
+                <div class="container">
+                    <div class="contact-info">
+                        <a href="https://facebook.com/methupaB" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com/_methupa" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/methupaPerera" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://wa.me/+94755260309" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    
+                    <div class="info">
+                        <h3>
+                            <span>Welcome</span>
+                            <span> to my</span>
+                            <span> space !</span>
+                        </h3>
+                        <h1>I'm Methupa</h1>
+                        <h2>Frontend Developer</h2>
+                        <a href="#contact" class=" contact btn-lg btn-primary">Contact me <i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <div class="contact-form">
+                <form action="https://formspree.io/f/xeqwklnq" method="post">
+                    <h3>Contact me!</h3>
+                    <div>
+                        <input type="text" name="Name" placeholder="Name">
+                        <input type="tel" name="Phone" placeholder="Phone">
+                    </div>
+                    <textarea name="Message" placeholder="Message"></textarea>
+                    <div>
+                        <button type="submit" class="btn-primary btn-sm">Send ></button>
+                        <button class="close btn-primary btn-sm">Close</button>
+                    </div>
+                </form>
+
+                // Aesthetics for the form
+                <div class="circle circle-form"></div>
+            </div> -->
+
+            <!-- Arrow sign under the header -->
+            <a href="#about"><i class="bi bi-arrow-down-circle header-arrow"></i></a>
+
+            <!-- Aesthetics for the background -->
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+    </header>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container">
+            <div>
+                <!-- Reveal class is used for an animation effect -->
+                <h2 class="reveal">About me...</h2>
+                <p class="reveal">
+                    I'm a Front-End Developer located in Sri Lanka. I have a
+                    serious passion for UI effects, animations and creating
+                    intuitive, dynamic user experiences.
+                </p>
+                <p class="reveal">
+                    Well-organised person, self learner, problem solver with
+                    high attention to detail. Love to watch TV-Series & Movies.
+                    Fan of Quantum Physics...
+                </p>
+                <p class="reveal">
+                    Interested in the entire frontend spectrum and working on
+                    ambitious projects with positive people.
+                </p>
+            </div>
+            <img src="images/blue-theme/about-img.svg" alt="about section image" class="about-img reveal">
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="reveal">Skills I have...</h2>
+            <div class="skills">
+                <!-- Skills in computer languages -->
+                <div class="skill reveal">
+                    <div class="head">
+                        <div>
+                            <span class="material-symbols-rounded">frame_source</span>
+                            <p>Languages</p>
+                        </div>
+                        <span class="material-symbols-rounded down-arrow">keyboard_arrow_down</span>
+                    </div>
+
+                    <div class="body">
+                        <div class="item">
+                            <p>HTML</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>95%</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>CSS</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>80%</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>JavaScript</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>65%</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Scss</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>40%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills in designing -->
+                <div class="skill reveal">
+                    <div class="head">
+                        <div>
+                            <span class="material-symbols-rounded">design_services</span>
+                            <p>Designing</p>
+                        </div>
+                        <span class="material-symbols-rounded down-arrow">keyboard_arrow_down</span>
+                    </div>
+
+                    <div class="body">
+                        <div class="item">
+                            <p>Photoshop</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>65%</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Illustrator</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>25%</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Premiere Pro</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills in version control -->
+                <div class="skill reveal">
+                    <div class="head">
+                        <div>
+                            <span class="material-symbols-rounded">conversion_path</span>
+                            <p>Version Control</p>
+                        </div>
+                        <span class="material-symbols-rounded down-arrow">keyboard_arrow_down</span>
+                    </div>
+
+                    <div class="body">
+                        <div class="item">
+                            <p>Git</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>85%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="skill reveal">
+                    <div class="head">
+                        <div>
+                            <span class="material-symbols-rounded">workspace_premium</span>
+                            <p>Experience</p>
+                        </div>
+                        <span class="material-symbols-rounded down-arrow">keyboard_arrow_down</span>
+                    </div>
+
+                    <div class="body">
+                        <div class="item">
+                            <p>Beginner + Intermediate</p>
+                            <div class="progress-area">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <p>15%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work section -->
+    <section id="work">
+        <div class="container">
+            <h2 class="reveal">Projects I have done...</h2>
+            <div class="projects">
+                <div class="project reveal">
+                    <img src="images/work-img-one.png">
+                    <div class="description">
+                        <p class="heading">Calculator+</p>
+                        <p class="describe">
+                            This is my beginner project. You can do normal calculations 
+                            and you can calculate declining balance with this calculator.
+                        </p>
+                        <a href="https://calculator-tau-ecru.vercel.app/" target="_blank">Watch live demo...</a>
+                    </div>
+                </div>
+                <div class="project reveal">
+                    <img src="images/work-img-two.png">
+                    <div class="description">
+                        <p class="heading">Campus Website</p>
+                        <p class="describe">This is a dummy project created by me for a campus.</p>
+                        <a href="https://campus-website.vercel.app/" target="_blank">Watch live demo...</a>
+                    </div>
+                </div>
+                <div class="project reveal">
+                    <img src="images/work-img-three.png">
+                    <div class="description">
+                        <p class="heading">BankCal</p>
+                        <p class="describe">This is a financial calculator. You will be able to calculate declining balance and interest on interest with this.</p>
+                        <a href="https://calculator-for-banking.vercel.app/" target="_blank">Watch live demo...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="basic-contact">
+                <h4 class="reveal">Contact</h4>
+                <p class="reveal"><i class="bi bi-telephone-fill"></i> +94 75 526 0309</p>
+                <p class="reveal">
+                    <i class="bi bi-geo-alt-fill"></i> Bandaragama, SriLanka
+                </p>
+            </div>
+
+            <div class="permalinks">
+                <h4 class="reveal">Permalinks</h4>
+                <a href="#home" class="reveal">Home</a>
+                <a href="#about" class="reveal">About</a>
+                <a href="#skills" class="reveal">Skills</a>
+                <a href="#work" class="reveal">Work</a>
+            </div>
+
+            <!-- The contact form -->
+            <form action="https://formspree.io/f/xeqwklnq" method="post" class="reveal" id="contact">
+                <h4 class="reveal">Send me a message !</h3>
+                <div class="reveal">
+                    <input type="text" name="name" placeholder="Name" />
+                    <input type="text" name="phone" placeholder="Phone" />
+                </div>
+                <textarea name="message" id="message" placeholder="Message" class="reveal"></textarea>
+                <button type="submit" class="btn btn-primary btn-sm font-strong reveal">Send message !</button>
+            </form>
+        </div>
+        <p>2023&copy; Methupa Perera. All rights reserved.</p>
+    </footer>
+</body>
+</html>
